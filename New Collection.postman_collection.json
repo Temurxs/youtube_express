@@ -1,0 +1,289 @@
+{
+	"info": {
+		"_postman_id": "e0735bda-c0bd-4748-b0d5-ddc5a8076354",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43245246"
+	},
+	"item": [
+		{
+			"name": "channels",
+			"item": [
+				{
+					"name": "GET all channels",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2000/channels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"channels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET channels by a key",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2000/channels?key=Tech",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"channels"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "Tech"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get channel by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2000/channels/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"channels",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST a channel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \r\n      \"name\": \"MrBeast\",\r\n      \"avatarUrl\": \"https://example.com/avatars/techexplained.jpg\",\r\n      \"subscribers\": 1200000,\r\n      \"createdAt\": \"2016-05-20\",\r\n      \"description\": \"We break down complex tech into simple terms.\",\r\n      \"verified\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2000/channels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"channels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit channel",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"id\": \"1\",\r\n      \"name\": \"TechExplained\",\r\n      \"avatarUrl\": \"https://example.com/avatars/techexplained.jpg\",\r\n      \"subscribers\": 1200000,\r\n      \"createdAt\": \"2016-05-20\",\r\n      \"description\": \"We break down complex tech into simple terms.\",\r\n      \"verified\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2000/channels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"channels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete channel",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2000/channels/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"channels",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "videos",
+			"item": [
+				{
+					"name": "get all videos",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "get videos by a key",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2000/videos?key=Buck",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"videos"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "Buck"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get video by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2000/videos/a80ca4c6-2c1c-474e-be3a-2fc5c820d7d8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"videos",
+								"a80ca4c6-2c1c-474e-be3a-2fc5c820d7d8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \r\n    \"title\": \"Marvel\",\r\n    \"thumbnailUrl\": \"https://i.ytimg.com/vi_webp/gWw23EYM9VM/maxresdefault.webp\",\r\n    \"duration\": \"12:18\",\r\n    \"uploadTime\": \"May 9, 2011\",\r\n    \"views\": \"24,969,123\",\r\n    \"author\": \"Blender Inc.\",\r\n    \"videoUrl\": \"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4\",\r\n    \"description\": \"Song : Raja Raja Kareja Mein Samaja\\nAlbum : Raja Kareja Mein Samaja\\nArtist : Radhe Shyam Rasia\\nSinger : Radhe Shyam Rasia\\nMusic Director : Sohan Lal, Dinesh Kumar\\nLyricist : Vinay Bihari, Shailesh Sagar, Parmeshwar Premi\\nMusic Label : T-Series\",\r\n    \"subscriber\": \"25254545 Subscribers\",\r\n    \"isLive\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2000/videos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"videos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit video",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"id\": \"a80ca4c6-2c1c-474e-be3a-2fc5c820d7d8\",\r\n    \"title\": \"The second Blender Open Movie from 2006\",\r\n    \"thumbnailUrl\": \"https://i.ytimg.com/vi_webp/gWw23EYM9VM/maxresdefault.webp\",\r\n    \"duration\": \"12:18\",\r\n    \"uploadTime\": \"May 9, 2011\",\r\n    \"views\": \"24,969,123\",\r\n    \"author\": \"Blender Inc.\",\r\n    \"videoUrl\": \"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4\",\r\n    \"description\": \"Song : Raja Raja Kareja Mein Samaja\\nAlbum : Raja Kareja Mein Samaja\\nArtist : Radhe Shyam Rasia\\nSinger : Radhe Shyam Rasia\\nMusic Director : Sohan Lal, Dinesh Kumar\\nLyricist : Vinay Bihari, Shailesh Sagar, Parmeshwar Premi\\nMusic Label : T-Series\",\r\n    \"subscriber\": \"25254545 Subscribers\",\r\n    \"isLive\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:2000/videos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"videos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:2000/videos/eb66ef79-0f36-408c-b1ed-685bb2838fdd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "2000",
+							"path": [
+								"videos",
+								"eb66ef79-0f36-408c-b1ed-685bb2838fdd"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

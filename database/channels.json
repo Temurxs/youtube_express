@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "name": "TechExplained",
+    "avatarUrl": "https://example.com/avatars/techexplained.jpg",
+    "subscribers": 1200000,
+    "createdAt": "2016-05-20",
+    "description": "We break down complex tech into simple terms.",
+    "verified": false
+  },
+  {
+    "id": "3",
+    "name": "GameRealm",
+    "avatarUrl": "https://example.com/avatars/gamerealm.png",
+    "subscribers": 3200000,
+    "createdAt": "2013-11-02",
+    "description": "Gaming reviews, walkthroughs, and esports coverage.",
+    "verified": true
+  },
+  {
+    "id": "4",
+    "name": "Food Fusion",
+    "avatarUrl": "https://example.com/avatars/foodfusion.jpg",
+    "subscribers": 270000,
+    "createdAt": "2021-02-14",
+    "description": "Where flavor meets creativity – cooking tutorials & more.",
+    "verified": false
+  },
+  {
+    "id": "5",
+    "name": "History In Minutes",
+    "avatarUrl": "https://example.com/avatars/historyinminutes.jpg",
+    "subscribers": 1500000,
+    "createdAt": "2018-08-30",
+    "description": "Bite-sized history lessons for curious minds.",
+    "verified": true
+  },
+  {
+    "id": "1be60380-a7d3-4cec-bf77-3c20a30cab46",
+    "name": "MrBeast",
+    "avatarUrl": "https://example.com/avatars/techexplained.jpg",
+    "subscribers": 1200000,
+    "createdAt": "2016-05-20",
+    "description": "We break down complex tech into simple terms.",
+    "verified": true
+  }
+]
