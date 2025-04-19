@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "username": "tech_guru21",
+    "message": "Great explanation! Really helped me understand the topic.",
+    "date": "2025-04-17T14:32:00Z",
+    "videoId": "955ae130-1354-4797-b276-4788ac5e16df"
+  },
+  {
+    "id": 2,
+    "username": "learner101",
+    "message": "Can you make a tutorial on the next chapter too?. ASAP",
+    "date": "2025-04-17T15:10:00Z",
+    "videoId": "27b86886-f4b4-4d4d-9371-62dadc7e2a46"
+  },
+  {
+    "id": 3,
+    "username": "codeMaster",
+    "message": "This is exactly what I was looking for. Subscribed!",
+    "date": "2025-04-17T16:45:00Z",
+    "videoId": "27b86886-f4b4-4d4d-9371-62dadc7e2a46"
+  },
+  {
+    "id": 4,
+    "username": "chillDev",
+    "message": "I think you missed one small part, but overall solid content.",
+    "date": "2025-04-17T17:20:00Z",
+    "videoId": "27b86886-f4b4-4d4d-9371-62dadc7e2a46"
+  },
+  {
+    "id": 5,
+    "username": "devGirl99",
+    "message": "Wow, this was super useful. Thanks a lot!",
+    "date": "2025-04-17T18:05:00Z",
+    "videoId": "abc123"
+  },
+  {
+    "id": "b9e40961-9ccb-4835-b43c-291d193484ac",
+    "username": "learner101",
+    "message": "Can you make a tutorial on the next chapter too?",
+    "date": "2025-04-18T17:37:43.943Z",
+    "videoId": "27b86886-f4b4-4d4d-9371-62dadc7e2a46"
+  },
+  {
+    "id": "f1cfca7f-1ad8-4878-ac00-7b89aa1d767e",
+    "username": "user",
+    "date": "2025-04-19T07:14:03.411Z"
+  }
+]

@@ -1,18 +1,22 @@
 const { v4 } = require("uuid")
 const Io = require("../utils/Io.js")
 const Videos = new Io("./database/videos.json")
+// const channels = new Io("./database/channels.json")
 const VideoModel = require("../models/videoModel.js")
 
 const getAllVideos = async (req, res) => {
-    const key = req.query.key
+    const {key, channelId} = req.query
+    let videos = await Videos.read()
     if(key){
-        const videos = await Videos.read()
-         const filteredVideos = videos.filter(video => video.title.toLowerCase().includes(key.toLowerCase()) || video.description.toLowerCase().includes(key.toLowerCase()))
-         res.send(filteredVideos)
-    } else {
-    const videos = await Videos.read()
+         videos = videos.filter(video => video.title.toLowerCase().includes(key.toLowerCase()) || video.description.toLowerCase().includes(key.toLowerCase()))
+    } 
+    
+    if(channelId){ 
+        videos = videos.filter( video => video.channelId === channelId) 
+    } 
+   
     res.send(videos)
-    }
+    
 }
 
 const getVideoById = async (req, res) => {
@@ -58,3 +62,5 @@ module.exports = {
     updateVideo,
     deleteVideo
 }
+
+

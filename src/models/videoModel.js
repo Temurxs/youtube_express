@@ -1,5 +1,5 @@
 class Video {
-    constructor(id,title,thumbnailUrl,duration,uploadTime,views,author,videoUrl,description,subscriber,isLive){
+    constructor(id,title,thumbnailUrl,duration,uploadTime,views,author,videoUrl,description,subscriber,isLive, channelId){
         this.id = id
         this.title = title
         this.thumbnailUrl = thumbnailUrl
@@ -11,6 +11,7 @@ class Video {
         this.description = description
         this.subscriber = subscriber
         this.isLive = isLive
+        this.channelId = channelId
 
 
     }
